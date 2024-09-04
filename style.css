@@ -16,17 +16,17 @@ body{
 h1{
     text-align: center;
     margin-top: 20px;
-    font-size: 3em;
+    font-size: 4em;
 }
 
 main{
-    max-width: 500px;
+    max-width: 450px;
     height: 650px;
-    background-color: rgb(183, 252, 252);
+    background-color: rgb(133, 141, 141);
     margin: 30px auto;
     border-radius: 5px 5px 15px 15px;
-    border: solid 5px black;
-    box-shadow: 5px 4px 0px black;
+    border: solid 5px rgb(54, 53, 53);
+    box-shadow: 5px 4px 0px rgb(54, 53, 53);
     position: relative;
 }
 
@@ -34,14 +34,17 @@ main{
     width: 400px;
     height: 85px;
     background-color: grey;
-    margin: 35px auto;
+    margin: 35px auto 20px;
     border-radius: 5px;
     box-shadow: inset 3px 3px 2px 5px rgb(54, 53, 53);
+    font-size: 4.5em;
+    text-align: right;
+    padding: 0px 10px 10px 10px;
 }
 
 #CorpoCalculadora{
     position: absolute;
-    left: 10.1%;
+    left: 6.4%;
 }
 
 div{
@@ -50,14 +53,33 @@ div{
 }
 
 div > button{
-    width: 90px;
-    height: 90px;
+    width: 91px;
+    height: 91px;
     margin-right: 1px;
     padding: 20px;
-    background-color: rgb(190, 239, 255);
-    border: solid 3px black;
+    background-color: rgb(90, 91, 91);
+    border: solid 3px rgb(54, 53, 53);
     border-radius: 5px;
-    box-shadow: 2px 2px 0px black;
+    box-shadow: 2px 2px 0px rgb(54, 53, 53);
     font-family: calculator;
     font-size: 2.4em;
+    color: rgb(255, 255, 255);
+}
+
+#zero{
+    width: 187px;
+}
+
+#igual{
+    width: 187px;
+    background-color: rgb(136, 13, 13);
+}
+
+#limpar{
+    background-color: rgb(136, 13, 13);
+}
+
+.operadores{
+    background-color: rgb(145, 144, 143);
+    color: black;
 }

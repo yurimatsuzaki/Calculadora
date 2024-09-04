@@ -12,38 +12,40 @@
     <main>
 
         <section id="visor">
-
+            
         </section>
         <section id="CorpoCalculadora">
-            <div>
-                <button type="button" id="limpar">CE</button>
-                <button type="button" id="porcento">%</button>
-                <button type="button" id="multi">*</button>
-                <button type="button" id="divi">/</button>
+            <div id="linha1">
+                <button type="button" onclick="ClicarLimpar()" id="limpar">CE</button>
+                <button type="button" onclick="ClicarPorcento()" id="porcento" class="operadores">%</button>
+                <button type="button" onclick="ClicarMult()" id="multi" class="operadores">*</button>
+                <button type="button" onclick="ClicarDivi()" id="divi" class="operadores">/</button>
             </div>
-            <div>
-                <button type="button" id="sete">7</button>
-                <button type="button" id="oito">8</button>
-                <button type="button" id="nove">9</button>
-                <button type="button" id="menos">-</button>
+            <div id="linha2">
+                <button type="button" onclick="Clicar7()" id="sete">7</button>
+                <button type="button" onclick="Clicar8()" id="oito">8</button>
+                <button type="button" onclick="Clicar9()" id="nove">9</button>
+                <button type="button" onclick="ClicarMenos()" id="menos" class="operadores">-</button>
             </div>
-            <div>
-                <button type="button" id="quatro">4</button>
-                <button type="button" id="cinco">5</button>
-                <button type="button" id="seis">6</button>
-                <button type="button" id="mais">+</button>
+            <div id="linha3">
+                <button type="button" onclick="Clicar4()" id="quatro">4</button>
+                <button type="button" onclick="Clicar5()" id="cinco">5</button>
+                <button type="button" onclick="Clicar6()" id="seis">6</button>
+                <button type="button" onclick="ClicarMais()" id="mais" class="operadores">+</button>
             </div>
-            <div>
-                <button type="button" id="um">1</button>
-                <button type="button" id="dois">2</button>
-                <button type="button" id="tres">3</button>
-                <button type="button" id="igual">=</button>
+            <div id="linha4">
+                <button type="button" onclick="Clicar1()" id="um">1</button>
+                <button type="button" onclick="Clicar2()" id="dois">2</button>
+                <button type="button" onclick="Clicar3()" id="tres">3</button>
+                <button type="button" onclick="ClicarPonto()" id="ponto" class="operadores">.</button>
             </div>
-            <div>
-                <button type="button" id="zero">0</button>
-                <button type="button" id="ponto">.</button>
+            <div id="linha5">
+                <button type="button" onclick="ClicarZero()" id="zero">0</button>
+                <button type="button" onclick="ClicarIgual()" id="igual">=</button>
             </div>
         </section>
     </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
