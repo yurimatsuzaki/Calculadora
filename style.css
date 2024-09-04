@@ -1,0 +1,63 @@
+@font-face {
+    font-family: calculator;
+    src: url('fontes/Calculator.ttf');
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: calculator;
+}
+
+body{
+    background-color: rgb(240, 234, 154);
+}
+
+h1{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 3em;
+}
+
+main{
+    max-width: 500px;
+    height: 650px;
+    background-color: rgb(183, 252, 252);
+    margin: 30px auto;
+    border-radius: 5px 5px 15px 15px;
+    border: solid 5px black;
+    box-shadow: 5px 4px 0px black;
+    position: relative;
+}
+
+#visor{
+    width: 400px;
+    height: 85px;
+    background-color: grey;
+    margin: 35px auto;
+    border-radius: 5px;
+    box-shadow: inset 3px 3px 2px 5px rgb(54, 53, 53);
+}
+
+#CorpoCalculadora{
+    position: absolute;
+    left: 10.1%;
+}
+
+div{
+    width: 450px;
+    margin: 5px;
+}
+
+div > button{
+    width: 90px;
+    height: 90px;
+    margin-right: 1px;
+    padding: 20px;
+    background-color: rgb(190, 239, 255);
+    border: solid 3px black;
+    border-radius: 5px;
+    box-shadow: 2px 2px 0px black;
+    font-family: calculator;
+    font-size: 2.4em;
+}
