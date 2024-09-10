@@ -1,4 +1,6 @@
 let visor = document.getElementById('visor')
+let num1
+let num2
 
 function Clicar1(){
     var um = document.getElementById('um')
@@ -43,6 +45,11 @@ function Clicar9(){
     var nove = document.getElementById('nove')
     visor.innerHTML+='9'
 
+}
+
+function ClicarApagar(){
+    var nove = document.getElementById('apagar')
+    visor.innerHTML -= ''
 }
 
 function ClicarLimpar(){
