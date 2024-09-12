@@ -4,61 +4,61 @@ let num2
 
 function Clicar1(){
     var um = document.getElementById('um')
-    visor.innerHTML+='1'
-    num1 += 1
+    visor.value += 1
 }
 
 function Clicar2(){
     var dois = document.getElementById('dois')
-    visor.innerHTML+='2'
+    visor.value += 2
 }
 
 function Clicar3(){
     var tres = document.getElementById('tres')
-    visor.innerHTML+='3'
+    visor.value += 3
 }
 
 function Clicar4(){
     var quatro = document.getElementById('quatro')
-    visor.innerHTML+='4'
+    visor.value += 4
 }
 
 function Clicar5(){
     var cinco = document.getElementById('cinco')
-    visor.innerHTML+='5'
+    visor.value += 5
 }
 
 function Clicar6(){
     var seis = document.getElementById('seis')
-    visor.innerHTML+='6'
+    visor.value += 6
 }
 
 function Clicar7(){
     var sete = document.getElementById('sete')
-    visor.innerHTML+='7'
+    visor.value += 7
 }
 
 function Clicar8(){
     var oito = document.getElementById('oito')
-    visor.innerHTML+='8'
+    visor.value += 8
 }
 
 function Clicar9(){
     var nove = document.getElementById('nove')
-    visor.innerHTML+='9'
+    visor.value += 9
 }
 
 function ClicarZero(){
     var zero = document.getElementById('zero')
-    visor.innerHTML+='0'
-}
-
-function ClicarApagar(){
-    var nove = document.getElementById('apagar')
+    visor.value += 0
 }
 
 function ClicarLimpar(){
     var limpar = document.getElementById('limpar')
-    visor.innerHTML=' '
+    visor.value = ' '
 }
 
+function ClicarMais(){
+    var somar = document.getElementById('mais')
+
+    num1 = Number(visor.value)
+}

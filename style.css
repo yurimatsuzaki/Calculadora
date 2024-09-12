@@ -31,15 +31,17 @@ main{
 }
 
 #visor{
-    width: 400px;
+    display: block;
+    width: 390px;
     height: 85px;
     background-color: grey;
     margin: 35px auto 20px;
     border-radius: 5px;
     box-shadow: inset 3px 3px 2px 5px rgb(54, 53, 53);
-    font-size: 4.5em;
+    font-size: 5em;
     text-align: right;
-    padding: 0px 10px 10px 10px;
+    padding: 5px 5px 5px 5px;
+    color: black;
 }
 
 #CorpoCalculadora{
@@ -67,8 +69,12 @@ div > button{
 }
 
 #igual{
-    width: 187px;
+    width: 188px;
     background-color: rgb(136, 13, 13);
+}
+
+#zero{
+    width: 187px;
 }
 
 #limpar{
