@@ -6,17 +6,18 @@
 *{
     margin: 0%;
     padding: 0%;
-    font-family: calculator;
+    font-family: calculator, Arial, Helvetica, sans-serif;
 }
 
 body{
     background-color: rgb(240, 234, 154);
+    padding: 10px;
 }
 
 h1{
     text-align: center;
-    margin-top: 20px;
-    font-size: 4em;
+    margin-top: 10px;
+    font-size: 3.5em;
 }
 
 main{
@@ -32,7 +33,7 @@ main{
 
 #visor{
     display: block;
-    width: 390px;
+    max-width: 90%;
     height: 85px;
     background-color: grey;
     margin: 35px auto 20px;
@@ -44,37 +45,35 @@ main{
     color: black;
 }
 
-#CorpoCalculadora{
-    position: absolute;
-    left: 6.4%;
+.container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
-div{
-    width: 450px;
-    margin: 5px;
+.itens{
+    margin-bottom: 5px;
 }
 
-div > button{
-    width: 91px;
-    height: 91px;
+button{
+    width: 21%;
     margin-right: 1px;
     padding: 20px;
     background-color: rgb(90, 91, 91);
-    border: solid 3px rgb(54, 53, 53);
+    border: 3px solid rgb(54, 53, 53);
     border-radius: 5px;
     box-shadow: 2px 2px 0px rgb(54, 53, 53);
-    font-family: calculator;
     font-size: 2.4em;
     color: rgb(255, 255, 255);
 }
 
 #igual{
-    width: 188px;
+    width: 43.5%;
     background-color: rgb(136, 13, 13);
 }
 
 #zero{
-    width: 187px;
+    width: 43.5%;
 }
 
 #limpar{
