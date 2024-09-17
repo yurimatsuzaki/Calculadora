@@ -53,8 +53,13 @@ function ClicarZero(){
     FistNumber += '0'
 }
 
+function ClicarPonto(){
+    visor.value += '.'
+    FistNumber += '.'
+}
+
 function ClicarLimpar(){
-    visor.value = ' '
+    visor.value = ''
     FistNumber = ''
     SecundNumber = 0
     verificador = 0
@@ -63,10 +68,10 @@ function ClicarLimpar(){
 function ClicarMais(){
     if(verificador != 0){
         alert('Você já colocou o operador!')
-    }else if(visor.value.length == 0 || visor.value == ' '){
+    }else if(visor.value.length == 0 || visor.value == ''){
         alert('Adicione um número antes')
     }else if(ClicarIgual() == true){
-        SecundNumber += visor.value
+        SecundNumber += Number(visor.value)
         FistNumber = ''
         visor.value += '+'
         verificador = 1
@@ -85,7 +90,7 @@ function ClicarMenos(){
     }else if(visor.value.length == 0 || visor.value == ' '){
         alert('Adicione um número antes')
     }else if(ClicarIgual() == true){
-        SecundNumber += visor.value
+        SecundNumber +=  Number(visor.value)
         FistNumber = ''
         visor.value += '-'
         verificador = 2
@@ -103,7 +108,7 @@ function ClicarMulti(){
     }else if(visor.value.length == 0 || visor.value == ' '){
         alert('Adicione um número antes')
     }else if(ClicarIgual() == true){
-        SecundNumber += visor.value
+        SecundNumber +=  Number(visor.value)
         FistNumber = ''
         visor.value += 'x'
         verificador = 3
@@ -121,7 +126,7 @@ function ClicarDivi(){
     }else if(visor.value.length == 0 || visor.value == ' '){
         alert('Adicione um número antes')
     }else if(ClicarIgual() == true){
-        SecundNumber += visor.value
+        SecundNumber +=  Number(visor.value)
         FistNumber = ''
         visor.value += '/'
         verificador = 4
@@ -139,7 +144,7 @@ function ClicarPorcento(){
     }else if(visor.value.length == 0 || visor.value == ' '){
         alert('Adicione um número antes')
     }else if(ClicarIgual() == true){
-        SecundNumber += visor.value
+        SecundNumber +=  Number(visor.value)
         FistNumber = ''
         visor.value += '%'
         verificador = 5
@@ -191,7 +196,7 @@ function ClicarIgual(){
         FistNumber = 0
         SecundNumber = 0
     }
-
+    
     if(verificador == 1){
         visor.value = somar(SecundNumber, FistNumber)
         verificador = 0
@@ -204,5 +209,6 @@ function ClicarIgual(){
         FistNumber = 0
         SecundNumber = 0
     }
+
     return true
 }
