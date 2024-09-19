@@ -67,19 +67,32 @@ button{
     color: rgb(255, 255, 255);
 }
 
+button:hover{
+    background-color: rgb(73, 73, 73);
+    cursor: pointer;
+}
+
 #igual{
     width: 43.5%;
     background-color: rgb(136, 13, 13);
+}
+
+#igual:hover{
+    background-color: rgb(86, 5, 5);
 }
 
 #zero{
     width: 43.5%;
 }
 
+
 #limpar{
     background-color: rgb(136, 13, 13);
 }
 
+#limpar:hover{
+    background-color: rgb(86, 5, 5);
+}
 .operadores{
     background-color: rgb(145, 144, 143);
     color: black;
